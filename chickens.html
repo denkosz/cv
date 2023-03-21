@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chicken web </title>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="home">Home</a></li>
+            <li><a href="about">About</a></li>
+            <li><a href="contact">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1> Chicken</h1>
+        <!-- Alt attribbute will be read  -->
+        <img src="Chicken.webp" width="200" alt="Chicken">
+        <hr>
+        <a href="https://www.google.com"> Link </a>
+        <section>
+            <h2> Heaviest birds table</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Animal</th>
+                        <th>Avg. Mass</th>
+                        <th>Max Mass</th>
+                        <th>Flighted</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Ostrich</td>
+                        <td>104</td>
+                        <td>156</td>
+                        <td>No</td>
+                    </tr>
+                    <tr>
+                        <td>Somali ostrich</td>
+                        <td>90</td>
+                        <td>130</td>
+                        <td>No</td>
+                    </tr>
+                    <tr>
+                        <td>Wild Turkey</td>
+                        <td>13.5</td>
+                        <td>39</td>
+                        <td>Yes</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <br>
+            <table>
+                <thead>
+                    <tr>
+                        <th rowspan="2">Animal</th>
+                        <th colspan="2">Average Mass</th>
+                        <th rowspan="2">Flighted</th>
+                    </tr>
+                    <tr>
+                        <th>KG</th>
+                        <th>LBS</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Ostrich</td>
+                        <td>104</td>
+                        <td>104</td>
+                        <td>No</td>
+                    </tr>
+                    <tr>
+                        <td>Somali ostrich</td>
+                        <td>90</td>
+                        <td>104</td>
+                        <td>No</td>
+                    </tr>
+                    <tr>
+                        <td>Wild Turkey</td>
+                        <td>13.5</td>
+                        <td>104</td>
+                        <td>Yes</td>
+                    </tr>
+                </tbody>
+            </table>
+            <hr>
+            <h2> Forms </h2>
+            <form action="/tacos">
+                <label for="username">Enter a username: </label>
+                <input id="username" type="text" placeholder="username" name="username">
+                <br>
+                <label for="password">Enter a password: </label>
+                <input id="password" type="password" placeholder="password" name="password">
+                <br>
+                <label for="color">Choose color: </label>
+                <input id="color" type="color" name="color">
+                <br>
+                <label for="number">Choose a number: </label>
+                <input id="number" type="number" placeholder="number" name="num">
+                <br>
+                <button>Submit</button>
+                <br>
+                <hr>
+            </form>
+            <h3>Reddit</h3>
+            <form action="https://www.reddit.com/search">
+                <input type="text" name="q">
+                <button>Search Reddit</button>
+            </form>
+            <hr>
+            <h3>Google</h3>
+            <form action="https://www.google.com/search">
+                <input type="text" name="q">
+                <button>Search Google</button>
+            </form>
+            <hr>
+            <h3>Youtube</h3>
+            <form action="https://www.youtube.com/results">
+                <input type="text" name="search_query">
+                <button>Search Youtube</button>
+            </form>
+            <hr>
+            <h2>More Inputs</h2>
+            <form action="/birds">
+                <input type="checkbox" name="agree_tos" id="agree">
+                <label for="agree">I agree to everything</label>
+                <p>
+                    <label for="xs">XS:</label>
+                    <input type="radio" name="size" id="xs" value="LOLOL">
+                    <label for="s">S</label>
+                    <input type="radio" name="size" id="s" value="s">
+                    <label for="m">M</label>
+                    <input type="radio" name="size" id="m" value="m">
+                </p>
+                <p>
+                    <label for="meal">Pleace select an Entree</label>
+                    <select name="meal" id="meal">
+                        <option value="fish">Fish</option>
+                        <option value="chicken">Chicken</option>
+                        <option value="meat">Meat</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="cheese">Amount of Cheese</label>
+                    <input type="range" id="cheese" min="1" max="10" name="cheese_level">
+                </p>
+                <p>
+                    <label for="">Any special request?</label>
+                    <br>
+                    <textarea id="request" rows="10" cols="40" name="request" placeholder="type somethign"></textarea>
+                </p>
+                <button>Submit</button>
+            </form>
+            <hr>
+            <h2>Validations Demo</h2>
+            <form action="/dummy">
+                <label for="first">Enter first name</label>
+                <input type="text" name="first" id="first" required>
+                <p>
+                    <label for="username1">Username</label>
+                    <input type="text" id="username1" name="username1" minlength="5" maxlength="20" required>
+                </p>
+                <p>
+                    <input type="email" required>
+                </p>
+                <button>Submit</button>
+            </form>
+            <h2>Eggs</h2>
+            <b>Lorem</b> Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's
+            standard
+            dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+            type
+            specimen
+            book.
+            <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining
+                essentially
+                unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
+                passages,
+                and
+                more
+                recently with desktop publishing software like Aldus PageMaker
+                including versions of Lorem Ipsum.</p>
+
+            <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining
+                essentially
+                unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
+                passages,
+                and
+                more
+                recently with desktop publishing software like Aldus PageMaker
+                including versions of Lorem Ipsum.</p>
+
+            <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining
+                essentially
+                unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
+                passages,
+                and
+                more
+                recently with desktop publishing software like Aldus PageMaker
+                including versions of Lorem Ipsum.</p>
+        </section>
+        <h2>Breeds of chickens</h2>
+        <h2> History </h2>
+        <p>
+            An early domestication of chickens in Southeast Asia is probable, since the word for domestic chicken
+            (*manuk) is part of the reconstructed Proto-Austronesian language (see Austronesian languages). Chickens,
+            together with dogs and pigs, were the domestic animals of the Lapita culture,[26] the first Neolithic
+            culture of Oceania.[27]
+
+            The first pictures of chickens in Europe are found on Corinthian pottery of the 7th century BC.[28][29]
+
+            Chickens were spread by Polynesian seafarers and reached Easter Island in the 12th century AD, where they
+            were the only domestic animal, with the possible exception of the Polynesian rat (Rattus exulans). They were
+            housed in chicken coops built from stone, which was first reported as such to Linton Palmer in 1868, who
+            also " expressed his doubts about this" </p>
+        <ul>
+            <li> Bantham <sup>[2]</sup>
+                <ul>
+                    <li>Silkie</li>
+                    <li>Polish</li>
+                    <li>Egger</li>
+                    <li>R.Island Red</li>
+                </ul>
+            </li>
+            <li>Silkie</li>
+            <li>Polish</li>
+            <li>Egger</li>
+            <li>R.Island Red</li>
+        </ul>
+    </main>
+    <footer>
+        <p>
+            This is my website
+        </p>
+        <ul>
+            <li><a href="asd">Contact</a></li>
+            <li><a href="asd">Help</a></li>
+        </ul>
+    </footer>
+</body>
+
+</html>
